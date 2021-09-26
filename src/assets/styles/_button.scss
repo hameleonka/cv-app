@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: $main_black;
+  border-radius: 5px;
+  border: none;
+
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  color: $main_white;
+  box-sizing: border-box;
+  /* or 19px */
+
+  svg {
+    margin-right: 7px;
+  }
+
+  &:hover {
+    background: $main_green;
+    border-color: $main_green;
+  }
+}
