@@ -1,0 +1,40 @@
+.feedbackItem {
+  &__container {
+    margin-bottom: 38.5px;
+  }
+
+  &__feedback {
+    padding: 15px;
+    background-color: $grey_bgnd;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: $main_black;
+  }
+
+  &__reporter {
+    &-container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &-name {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 120%;
+      color: $main_black;
+      margin-left: 20px;
+
+      a {
+        color: $main_green;
+        text-decoration: none;
+      }
+    }
+  }
+}

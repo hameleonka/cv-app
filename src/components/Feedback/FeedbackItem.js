@@ -1,13 +1,14 @@
+import Info from '../Info';
 
-import personPhoto from '../../assets/images/feedback_img.png';
+import reporterPhoto from '../../assets/images/feedback_img.png';
 
 function FeedbackItem(props) {
   return (
-    <div>
-      <p>{props.feedback}</p>
-      <div>
-        <img src={personPhoto} alt="person who wrote a feedback" />
-        <span>{props.name}, <a href={props.citeUrl}>{props.citeUrl}</a></span>
+    <div className="feedbackItem__container">
+      <p className="feedbackItem__feedback">{props.feedback}</p>
+      <div className="feedbackItem__reporter-container">
+        <img src={reporterPhoto} alt="person who wrote a feedback" />
+        <span className="feedbackItem__reporter-name">{props.name}, <a href={props.citeUrl}>{props.citeUrl}</a></span>
       </div>
     </div>
   )
