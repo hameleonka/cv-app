@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .button {
   display: flex;
   flex-direction: row;
@@ -26,5 +28,13 @@
   &:hover {
     background: $main_green;
     border-color: $main_green;
+    cursor: pointer;
   }
+}
+
+.panel__btn {
+  position: absolute;
+  bottom: 31px;
+  left:50%;
+  transform: translateX(-50%);
 }

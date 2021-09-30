@@ -1,10 +1,11 @@
+@import '../../assets/styles/variables.scss';
+
 .photobox {
   &__container {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     width: 500px;
-    background-color: $main_black;
     margin: 0 auto;
 
     &--panel {

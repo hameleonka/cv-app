@@ -1,0 +1,29 @@
+.c-home {
+  position: relative;
+  background-image: url("../assets/images/home_background.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  padding-top: 17vh;
+
+  &__photobox {
+    margin-bottom: 10px;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000614;
+    opacity: 0.7;
+    z-index: -1;
+  }
+}
+
+.l-home {
+  margin: 0 auto;
+}

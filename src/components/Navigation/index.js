@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser,faGraduationCap, faPen, faGem, faSuitcase, faLocationArrow, faComment} from '@fortawesome/free-solid-svg-icons';
 
+import './index.scss';
+
 function Navigation() {
   return (
     <nav className="navigation__container">

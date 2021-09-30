@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
-import PhotoBox from "./PhotoBox";
-import Navigation from "./Navigation";
-import Button from "./Button";
+import PhotoBox from "../PhotoBox/index";
+import Navigation from "../Navigation/index";
+import Button from "../Button/index";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import menuIcon from '../assets/images/menu_icon.svg';
+import menuIcon from '../../assets/images/menu_icon.svg';
+
+import './index.scss';
 
 function Panel() {
   const [menuIsOpen, setMenuIsOpen] = useState(true);
@@ -22,7 +24,11 @@ function Panel() {
         styles="panel"
       />
       <Navigation />
-      <Button icon={<FontAwesomeIcon icon={faChevronLeft} />} text="Go back" />
+      <Button
+        classes="panel__btn"
+        icon={<FontAwesomeIcon icon={faChevronLeft} />}
+        text="Go back"
+        page="home" />
       <img
         className="panel__menu-icon"
         src={menuIcon}

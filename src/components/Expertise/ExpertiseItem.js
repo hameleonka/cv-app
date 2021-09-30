@@ -1,3 +1,5 @@
+import './expertiseItem.scss';
+
 function ExpertiseItem(props) {
   return (
     <div className="expertiseItem__container">

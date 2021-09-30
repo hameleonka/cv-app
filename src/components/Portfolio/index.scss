@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables.scss';
+
+.portfolioList {
+  &__keys {
+    margin-bottom: 20px;
+
+    li {
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      padding-left: 10px;
+
+      &:first-child {
+        padding-left: 10px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.active {
+  color: $main_black;
+}
+
+.not-active {
+  color: $main_green;
+}

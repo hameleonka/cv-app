@@ -1,3 +1,5 @@
+import './index.scss';
+
 function PhotoBox(props) {
   const containerClass = props.styles === 'panel' ? 'photobox__container photobox__container--panel' : 'photobox__container';
   const imgClass = props.styles === 'panel' ? 'photobox__img photobox__img--panel' : 'photobox__img';

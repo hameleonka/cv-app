@@ -1,0 +1,35 @@
+@import "../../assets/styles/variables.scss";
+
+.address {
+  &__container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    color: $main_black;
+    text-decoration: none;
+    padding: 15px 0;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__icon {
+    color: $main_green;
+    margin-right: 20px;
+  }
+
+  &__link {
+    font-weight: normal;
+    color: $grey_text;
+  }
+}

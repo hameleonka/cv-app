@@ -1,0 +1,30 @@
+.timeline {
+  &__list {
+    position: relative;
+    padding: 15px;
+    min-height: 30vh;
+    max-height: 80vh;
+    overflow: auto;
+
+    &:before {
+      background: #26c17e;
+      position: absolute;
+      top: 15px;
+      bottom: 15px;
+      left: 10px;
+      width: 4px;
+      content: "";
+      margin-left: 18px;
+    }
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
