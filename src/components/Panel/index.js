@@ -1,21 +1,24 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
 
-import PhotoBox from "../PhotoBox/index";
-import Navigation from "../Navigation/index";
-import Button from "../Button/index";
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import PhotoBox from '../PhotoBox';
+import Navigation from '../Navigation';
+import Button from '../Button';
+
 import menuIcon from '../../assets/images/menu_icon.svg';
 
 import './index.scss';
 
 function Panel() {
   const [menuIsOpen, setMenuIsOpen] = useState(true);
-  const toggleMenuTransform = menuIsOpen ? 'translateX(0)' : 'translateX(-100%)';
+  const toggleMenuTransform = {
+    marginLeft: menuIsOpen ? '0' : 'calc(-1 * var(--aside-width))',
+  };
 
   return (
-    <div className="panel__container" style={{ transform: toggleMenuTransform }}>
+    <div className="panel__container" style={toggleMenuTransform}>
       <PhotoBox
         name="John Doe"
         title=""
@@ -26,17 +29,18 @@ function Panel() {
       <Navigation />
       <Button
         classes="panel__btn"
-        icon={<FontAwesomeIcon icon={faChevronLeft} />}
+        icon={faChevronLeft}
         text="Go back"
-        page="home" />
+        page="home"
+      />
       <img
         className="panel__menu-icon"
         src={menuIcon}
         alt="menu icon"
-        onClick={() => setMenuIsOpen(!menuIsOpen)}
+        onClick={() => setMenuIsOpen((oldState) => !oldState)}
       />
     </div>
-  )
+  );
 }
 
 export default Panel;

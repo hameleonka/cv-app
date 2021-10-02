@@ -1,16 +1,13 @@
-@import '../../assets/styles/variables.scss';
+@import "../../assets/styles/base.scss";
 
 .portfolioList {
   &__keys {
     margin-bottom: 20px;
 
     li {
+      @extend .c-nav_text;
+
       display: inline-block;
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 120%;
       padding-left: 10px;
 
       &:first-child {

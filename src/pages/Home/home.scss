@@ -1,12 +1,12 @@
 .c-home {
   position: relative;
-  background-image: url("../assets/images/home_background.png");
+  background-image: url("../../assets/images/home_background.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  padding-top: 17vh;
+  padding: 17vh 20px 20px 20px;
 
   &__photobox {
     margin-bottom: 10px;

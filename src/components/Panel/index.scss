@@ -1,13 +1,17 @@
-@import '../../assets/styles/variables.scss';
+@import "../../assets/styles/variables.scss";
 
 .panel {
   &__container {
+    display: flex;
+    flex-flow: column;
+    --aside-width: 250px;
     position: relative;
-    width: 250px;
+    width: var(--aside-width);
     height: 100%;
     background-color: $main_black;
     padding: 20px 0;
-    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
   }
 
   &__menu-icon {
@@ -17,6 +21,14 @@
 
     &:hover {
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .panel {
+    &__container {
+      --aside-width: 54px;
     }
   }
 }

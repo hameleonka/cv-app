@@ -1,28 +1,21 @@
-@import '../../assets/styles/variables.scss';
+@import "../../assets/styles/base.scss";
 
 .box {
+  &__container {
+    margin-bottom: 50px;
+  }
   &__title {
-    color: $main_green;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 120%;
-    /* identical to box height, or 30px */
+    @extend .c-section_title;
 
+    color: $main_green;
+    font-weight: bold;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
   }
 
   &__content {
-    color: $main_black;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
-    /* or 21px */
+    @extend .c-text;
 
     display: flex;
     align-items: center;

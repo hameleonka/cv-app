@@ -1,6 +1,8 @@
-@import '../../assets/styles/variables.scss';
+@import "../../assets/styles/base.scss";
 
 .button {
+  @extend .c-btn_text;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -9,16 +11,7 @@
   background: $main_black;
   border-radius: 5px;
   border: none;
-
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 120%;
-  color: $main_white;
   box-sizing: border-box;
-  /* or 19px */
-
   margin: 0 auto;
 
   svg {
@@ -33,8 +26,16 @@
 }
 
 .panel__btn {
-  position: absolute;
-  bottom: 31px;
-  left:50%;
-  transform: translateX(-50%);
+  margin-top: auto;
+  align-self: center;
+}
+
+@media screen and (max-width: 800px) {
+  .panel__btn {
+    background: $main_green;
+    padding: 5px 6px;
+    span {
+      display: none;
+    }
+  }
 }

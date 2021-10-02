@@ -1,1 +1,63 @@
+@import "../../assets/styles/variables.scss";
+
+.c-text {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: $main_black;
+  }
+
+  .c-text_small {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    color: $main_black;
+  }
+
+  .c-name_title {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 120%;
+    color: $main_white;
+  }
+
+  .c-section_title {
+    font-family: $text-font;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 120%;
+  }
+
+  .c-box_title {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    color: $main_black;
+  }
+
+  .c-nav_text {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .c-btn_text {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: $main_white;
+  }
+
 

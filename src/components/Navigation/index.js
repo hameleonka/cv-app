@@ -1,57 +1,37 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser,faGraduationCap, faPen, faGem, faSuitcase, faLocationArrow, faComment} from '@fortawesome/free-solid-svg-icons';
+import {
+  faUser, faGraduationCap, faPen, faGem, faSuitcase, faLocationArrow, faComment,
+} from '@fortawesome/free-solid-svg-icons';
+import NavigationItem from './NavigationItem';
 
 import './index.scss';
 
 function Navigation() {
+  const navigationItems = [
+    { icon: faUser, text: 'About me', link: 'about_me' },
+    { icon: faGraduationCap, text: 'Education', link: 'education' },
+    { icon: faPen, text: 'Experience', link: 'experience' },
+    { icon: faGem, text: 'Skills', link: 'skills' },
+    { icon: faSuitcase, text: 'Portfolio', link: 'portfolio' },
+    { icon: faLocationArrow, text: 'Contacts', link: 'contacts' },
+    { icon: faComment, text: 'Feedbacks', link: 'feedbacks' },
+  ];
+
   return (
     <nav className="navigation__container">
       <ul>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <i><FontAwesomeIcon icon={faUser} className="fa-fw"/></i>
-            <span>About me</span>
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <i><FontAwesomeIcon icon={faGraduationCap} className="fa-fw"/></i>
-            <span>Education</span>
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <i><FontAwesomeIcon icon={faPen} className="fa-fw"/></i>
-            <span>Experience</span>
-          </a>
-        </li >
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <i><FontAwesomeIcon icon={faGem} className="fa-fw"/></i>
-            <span>Skills</span>
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <i><FontAwesomeIcon icon={faSuitcase} className="fa-fw"/></i>
-            <span>Portfolio</span>
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <i><FontAwesomeIcon icon={faLocationArrow} className="fa-fw fa-xs"/></i>
-            <span>Contacts</span>
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <i><FontAwesomeIcon icon={faComment} className="fa-fw"/></i>
-            <span>Feedbacks</span>
-          </a>
-        </li>
+        { navigationItems.map((navigationItem, index) => (
+          <li className="navigation__item">
+            <NavigationItem
+              key={index}
+              icon={navigationItem.icon}
+              text={navigationItem.text}
+              link={navigationItem.link}
+            />
+          </li>
+        ))}
       </ul>
     </nav>
-  )
+  );
 }
 
 export default Navigation;

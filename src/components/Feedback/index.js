@@ -1,9 +1,9 @@
-import FeedbackItem from "./FeedbackItem";
+import FeedbackItem from './FeedbackItem';
 
-function Feedback(props) {
+function Feedback({ data }) {
   return (
     <div>
-      {props.data.map((feedback, index) => (
+      {data.map((feedback, index) => (
         <FeedbackItem
           key={index}
           feedback={feedback.feedback}
@@ -12,7 +12,7 @@ function Feedback(props) {
         />
       ))}
     </div>
-  )
+  );
 }
 
 export default Feedback;

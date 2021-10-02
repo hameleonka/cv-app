@@ -1,10 +1,9 @@
+@import "../../assets/styles/base.scss";
+
 .timelineItem {
   &__date {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 120%;
+    @extend .c-box_title;
+
     padding: 15px;
     background: #fff;
     position: relative;
@@ -30,21 +29,15 @@
   }
 
   &__title {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 120%;
+    @extend .c-box_title;
+
     margin: 0;
     margin-bottom: 5px;
   }
 
   &__text {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
+    @extend .c-text;
+
     margin: 0;
   }
 }

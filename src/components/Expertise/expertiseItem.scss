@@ -1,4 +1,4 @@
-@import '../../assets/styles/variables.scss';
+@import "../../assets/styles/base.scss";
 
 .expertiseItem {
   &__container {
@@ -10,28 +10,21 @@
   }
 
   &__company {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 120%;
-    /* or 19px */
+    @extend .c-box_title;
+    
     margin: 0;
     margin-bottom: 5px;
   }
 
   &__date {
+    @extend .c-box_title ;
+    font-weight: normal;
     color: $grey_text;
   }
 
   &__description {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
-    color:$main_black;
-    /* or 21px */
+    @extend .c-text;
+
     margin: 0;
   }
 }

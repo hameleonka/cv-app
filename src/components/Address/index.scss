@@ -1,4 +1,4 @@
-@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/base.scss";
 
 .address {
   &__container {
@@ -7,19 +7,22 @@
   }
 
   &__contact {
+    @extend .c-box_title;
+
     display: flex;
     align-items: center;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 120%;
-    color: $main_black;
     text-decoration: none;
     padding: 15px 0;
 
-    span {
-      display: inline-block;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-details {
+      display: inline-flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: flex-start;
     }
   }
 

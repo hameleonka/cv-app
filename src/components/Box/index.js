@@ -1,12 +1,16 @@
 import './index.scss';
 
-function Box(props) {
+function Box({
+  title, content, component, id,
+}) {
   return (
-    <div>
-      <h3 className="box__title">{props.title}</h3>
-      <p className="box__content">{props.content}</p>
-      {props.component && (
-        <div>{props.component}</div>
+    <div id={id} className="box__container">
+      <h3 className="box__title">{title}</h3>
+      {content && (
+      <p className="box__content">{content}</p>
+      )}
+      {component && (
+        <div>{component}</div>
       )}
     </div>
   );

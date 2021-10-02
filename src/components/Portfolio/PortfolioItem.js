@@ -1,18 +1,20 @@
 import './portfolioItem.scss';
 
-function PortfolioItem(props) {
+function PortfolioItem({
+  filter, image, title, text, url,
+}) {
   return (
-    <div className={`portfolioItem__container filter-item ${props.filter}`}>
+    <div className={`portfolioItem__container filter-item ${filter}`}>
       <div className="portfolioItem__image">
-        <img src={props.image} alt="project" />
+        <img src={image} alt="project" />
       </div>
       <div className="portfolioItem__info">
-        <h4 className="portfolioItem__title">{props.title}</h4>
-        <p className="portfolioItem__text">{props.text}</p>
-        <a className="portfolioItem__link" href={props.url}>View resource</a>
+        <h4 className="portfolioItem__title">{title}</h4>
+        <p className="portfolioItem__text">{text}</p>
+        <a className="portfolioItem__link" href={url}>View resource</a>
       </div>
     </div>
-  )
+  );
 }
 
 export default PortfolioItem;

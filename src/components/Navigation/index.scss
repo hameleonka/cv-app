@@ -8,25 +8,4 @@
   &__item {
     padding: 21px;
   }
-
-  &__link {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 120%;
-    color: $grey_text;
-    text-decoration: none;
-
-    &:hover,
-    &:active {
-      color: $main_green;
-    }
-
-    i {
-      display: inline-block;
-      width: 14px;
-      margin-right: 20px;
-    }
-  }
 }
