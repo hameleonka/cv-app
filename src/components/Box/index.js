@@ -1,7 +1,10 @@
+import Loader from '../Loader';
+import Error from '../Error';
+
 import './index.scss';
 
 function Box({
-  title, content, component, id,
+  title, content, component, id, showLoader, showError, showComponent,
 }) {
   return (
     <div id={id} className="box__container">
@@ -9,7 +12,14 @@ function Box({
       {content && (
       <p className="box__content">{content}</p>
       )}
-      {component && (
+
+      { showLoader && (
+      <Loader />
+      )}
+      { showError && (
+      <Error />
+      )}
+      {component && showComponent && (
         <div>{component}</div>
       )}
     </div>

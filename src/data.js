@@ -76,3 +76,22 @@ export const timelineData = [
     text: 'Labore esse tempor nisi non mollit enim elit ullamco veniam elit duis nostrud. Enim pariatur ullamco dolor eu sunt ad velit aute eiusmod aliquip voluptate. Velit magna labore eiusmod eiusmod labore amet eiusmod. In duis eiusmod commodo duis. Exercitation Lorem sint do aliquip veniam duis elit quis culpa irure quis nulla. Reprehenderit fugiat amet sint commodo ex.\r\n',
   },
 ];
+
+export const skillsData = [
+  {
+    name: 'HTML',
+    range: 10,
+  },
+  {
+    name: 'CSS',
+    range: 8,
+  },
+  {
+    name: 'JavaScript',
+    range: 7,
+  },
+  {
+    name: 'ReactJS',
+    range: 7,
+  },
+];
