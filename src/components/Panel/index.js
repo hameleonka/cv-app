@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import PhotoBox from '../PhotoBox';
 import Navigation from '../Navigation';
-import Button from '../Button';
+import RouterButton from '../../RouterButton';
 
 import menuIcon from '../../assets/images/menu_icon.svg';
 
@@ -27,7 +27,7 @@ function Panel() {
         styles="panel"
       />
       <Navigation />
-      <Button
+      <RouterButton
         classes="panel__btn"
         icon={faChevronLeft}
         text="Go back"

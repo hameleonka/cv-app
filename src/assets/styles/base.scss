@@ -51,6 +51,14 @@
   line-height: 120%;
 }
 
+.c-chart_text {
+  font-family: $text-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+}
+
 .c-btn_text {
   font-family: $text-font;
   font-style: normal;
@@ -58,4 +66,40 @@
   font-size: 16px;
   line-height: 120%;
   color: $main_white;
+}
+
+.c-form_text {
+  font-family: $text-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: $main_black;
+}
+
+.c-button {
+  @extend .c-btn_text;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+
+  &--active {
+    background-color: $main_black;
+
+    &:hover {
+      background: $main_green;
+      border-color: $main_green;
+      cursor: pointer;
+    }
+  }
+
+  &--disabled {
+    background-color: $grey_text;
+  }
 }

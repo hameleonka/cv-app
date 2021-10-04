@@ -1,5 +1,5 @@
 import PhotoBox from '../../components/PhotoBox';
-import Button from '../../components/Button';
+import RouterButton from '../../RouterButton';
 
 import './home.scss';
 
@@ -15,7 +15,7 @@ function Home() {
             avatar="http://avatars0.githubusercontent.com/u/246180?v=4"
           />
         </div>
-        <Button
+        <RouterButton
           text="Know more"
           page="inner"
         />

@@ -80,18 +80,18 @@ export const timelineData = [
 export const skillsData = [
   {
     name: 'HTML',
-    range: 10,
+    range: 100,
   },
   {
     name: 'CSS',
-    range: 8,
+    range: 50,
   },
   {
     name: 'JavaScript',
-    range: 7,
+    range: 60,
   },
   {
     name: 'ReactJS',
-    range: 7,
+    range: 70,
   },
 ];

@@ -1,0 +1,55 @@
+@import "../../assets/styles/base.scss";
+
+.addSkillForm {
+  &__wrapper {
+    border: 1px solid $main_green;
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+  }
+
+  &__field {
+    margin-bottom: 20px;
+
+    &-label {
+      @extend .c-form_text;
+      margin-right: 20px;
+    }
+
+    &-input {
+      @extend .c-text_small;
+      width: 270px;
+      padding: 10px;
+      border: 1px solid $grey_text;
+      border-radius: 5px;
+      box-sizing: border-box;
+
+      &:focus {
+        outline:none;
+        border:1px solid $main_green;
+      }
+
+      &--error {
+        color: $red_error;
+        border-color: $red_error;
+      }
+    }
+
+    &-error {
+      @extend .c-text_small;
+      color: $red_error;
+      padding-top: 5px;
+    }
+  }
+
+  &__btn {
+    &--active {
+      @extend .c-button, .c-button--active;
+      background-color: $main_green;
+    }
+    &--disabled {
+      @extend .c-button, .c-button--disabled;
+      color: $main_black;
+    }
+  }
+}

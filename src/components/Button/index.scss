@@ -1,33 +1,23 @@
 @import "../../assets/styles/base.scss";
 
 .button {
-  @extend .c-btn_text;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  background: $main_black;
-  border-radius: 5px;
-  border: none;
-  box-sizing: border-box;
+@extend .c-button, .c-button--active;
   margin: 0 auto;
 
   svg {
     margin-right: 7px;
-  }
-
-  &:hover {
-    background: $main_green;
-    border-color: $main_green;
-    cursor: pointer;
   }
 }
 
 .panel__btn {
   margin-top: auto;
   align-self: center;
+}
+
+.skills__btn {
+  position: absolute;
+  top:-50px;
+  right: 0;
 }
 
 @media screen and (max-width: 800px) {

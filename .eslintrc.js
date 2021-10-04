@@ -22,5 +22,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 0,
     'react/no-array-index-key': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };

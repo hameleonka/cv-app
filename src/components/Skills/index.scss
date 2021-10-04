@@ -1,0 +1,24 @@
+@import "../../assets/styles/base.scss";
+
+.skills {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__chart {
+    margin-bottom: 20px;
+    
+    &-item {
+      width: 100%;
+      background-color: $main_green;
+      padding: 5px 15px;
+      margin-bottom: 5px;
+      box-sizing: border-box;
+    }
+
+    &-name {
+      @extend .c-chart_text;
+      color: $main_white;
+    }
+  }
+}
