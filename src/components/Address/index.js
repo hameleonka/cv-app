@@ -11,7 +11,7 @@ function Address() {
         <FontAwesomeIcon icon={faPhoneAlt} className="address__icon fa-lg fa-fw" />
         929 238 2891
       </a>
-      <a href="mailto:hameleonka28@gmail.com" className="address__contact">
+      <a href="mailto:nmilovanova@gmail.com" className="address__contact">
         <FontAwesomeIcon icon={faEnvelope} className="address__icon fa-lg fa-fw" />
         {' '}
         nmilovanova@gmail.com

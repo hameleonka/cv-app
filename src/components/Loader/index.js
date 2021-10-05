@@ -4,7 +4,7 @@ import './index.scss';
 
 function Loader() {
   return (
-    <i className="loader"><FontAwesomeIcon icon={faSyncAlt} className="fa-2x" /></i>
+    <i className="loader" data-testid="icon"><FontAwesomeIcon icon={faSyncAlt} className="fa-2x" /></i>
   );
 }
 
