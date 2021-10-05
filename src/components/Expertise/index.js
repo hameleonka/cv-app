@@ -3,7 +3,7 @@ import ExpertiseItem from './ExpertiseItem';
 
 function Expertise({ data }) {
   return (
-    <div>
+    <div className="expertise__container">
       {data.map((expertise, index) => (
         <ExpertiseItem
           key={index}

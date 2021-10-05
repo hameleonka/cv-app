@@ -1,5 +1,5 @@
 import PhotoBox from '../../components/PhotoBox';
-import RouterButton from '../../RouterButton';
+import RouterButton from '../../components/RouterButton';
 
 import './home.scss';
 

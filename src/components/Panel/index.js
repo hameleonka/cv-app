@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import PhotoBox from '../PhotoBox';
 import Navigation from '../Navigation';
-import RouterButton from '../../RouterButton';
+import RouterButton from '../RouterButton';
 
 import menuIcon from '../../assets/images/menu_icon.svg';
 
