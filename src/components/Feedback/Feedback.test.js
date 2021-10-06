@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Feedback from '.';
-import { feedbackData } from '../../data';
+import { feedbackData } from '../../utils/data';
 
 jest.mock('./FeedbackItem', () => () => (<div> This is feedback item</div>));
 

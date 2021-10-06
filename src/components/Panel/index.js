@@ -8,7 +8,7 @@ import Navigation from '../Navigation';
 import RouterButton from '../RouterButton';
 
 import menuIcon from '../../assets/images/menu_icon.svg';
-
+import photo from '../../assets/images/natalia_milovanova_photo.png';
 import './index.scss';
 
 function Panel() {
@@ -23,7 +23,7 @@ function Panel() {
         name="John Doe"
         title=""
         description=""
-        avatar="http://avatars0.githubusercontent.com/u/246180?v=4"
+        avatar={photo}
         styles="panel"
       />
       <Navigation />

@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import { requestState } from '../../const';
+import { requestState } from '../../utils/const';
 
 const timelineInitialState = {
   requestState: requestState.INITIAL,
@@ -37,7 +37,6 @@ export const getTimelineData = () => async (dispatch) => {
   dispatch(requestPending());
   try {
     const response = await fetch('/api/educations');
-    // const response = await fetch('/api/educions');
 
     if (!response.ok) {
       const message = `An error has occured: ${response.status}`;

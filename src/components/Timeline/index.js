@@ -7,9 +7,8 @@ function Timeline({ data }) {
     <ul className="timeline__list">
 
       {data.map((timelineItem, index) => (
-        <li>
+        <li key={index}>
           <TimelineItem
-            key={index}
             title={timelineItem.title}
             text={timelineItem.text}
             date={timelineItem.date}

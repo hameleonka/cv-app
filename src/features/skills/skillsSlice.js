@@ -1,10 +1,23 @@
+/* eslint-disable no-console */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import { requestState } from '../../const';
+import { requestState } from '../../utils/const';
+
+const getSkillsFromLocalStorage = () => {
+  try {
+    const persistedState = localStorage.getItem('Skills');
+    if (persistedState) { return JSON.parse(persistedState); }
+  } catch (e) {
+    console.log(e);
+  }
+  return null;
+};
+
+const skills = getSkillsFromLocalStorage();
 
 const skillsInitialState = {
   requestState: requestState.INITIAL,
-  skillsData: [],
+  skillsData: skills || [],
   addSkillFormState: false,
 };
 

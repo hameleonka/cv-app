@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { createServer } from 'miragejs';
-import { timelineData, skillsData } from '../data';
+import { timelineData, skillsData } from '../utils/data';
 
 const server = () => createServer({
   routes() {

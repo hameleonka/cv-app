@@ -3,7 +3,7 @@
 .expertiseItem {
   &__container {
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 2fr 10fr;
     grid-template-rows: auto auto;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
@@ -11,13 +11,13 @@
 
   &__company {
     @extend .c-box_title;
-    
+
     margin: 0;
     margin-bottom: 5px;
   }
 
   &__date {
-    @extend .c-box_title ;
+    @extend .c-box_title;
     font-weight: normal;
     color: $grey_text;
   }
@@ -26,5 +26,24 @@
     @extend .c-text;
 
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .expertiseItem {
+    &__container {
+      grid-template-columns: 3fr 10fr;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .expertiseItem {
+    &__container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-row-gap: 10px;
+      margin-bottom: 30px;
+    }
   }
 }

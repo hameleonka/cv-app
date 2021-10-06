@@ -20,9 +20,8 @@ function Navigation() {
     <nav className="navigation__container">
       <ul>
         { navigationItems.map((navigationItem, index) => (
-          <li className="navigation__item">
+          <li key={index} className="navigation__item">
             <NavigationItem
-              key={index}
               icon={navigationItem.icon}
               text={navigationItem.text}
               link={navigationItem.link}

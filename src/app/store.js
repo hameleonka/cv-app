@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import { configureStore } from '@reduxjs/toolkit';
 import { educationReducers } from '../features/education/educationSlice';
 import { skillsReducers } from '../features/skills/skillsSlice';

@@ -24,8 +24,8 @@ function Skills({ data }) {
         onClickHandler={onClickHandler}
       />
       <ul className="skills__chart">
-        {data.map((skill) => (
-          <li className="skills__chart-item" style={{ width: `${skill.range}%` }}>
+        {data.map((skill, index) => (
+          <li key={index} className="skills__chart-item" style={{ width: `${skill.range}%` }}>
             <span className="skills__chart-name">{skill.name}</span>
           </li>
         ))}

@@ -1,5 +1,6 @@
 import PhotoBox from '../../components/PhotoBox';
 import RouterButton from '../../components/RouterButton';
+import photo from '../../assets/images/natalia_milovanova_photo.png';
 
 import './home.scss';
 
@@ -9,10 +10,10 @@ function Home() {
       <div className="l-home">
         <div className="c-home__photobox">
           <PhotoBox
-            name="John Doe"
-            title="Programmer. Creative. Innovator"
-            description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque"
-            avatar="http://avatars0.githubusercontent.com/u/246180?v=4"
+            name="Natalia Milovanova"
+            title="Front-end web developer"
+            description="I build interactive apps that run across platforms & devices."
+            avatar={photo}
           />
         </div>
         <RouterButton

@@ -4,16 +4,12 @@ import Isotope from 'isotope-layout';
 import { useEffect, useRef, useState } from 'react';
 
 import PortfolioItem from './PortfolioItem';
-import { portfolioData } from '../../data';
+import { portfolioData } from '../../utils/data';
 
 import './index.scss';
 
 function Portfolio() {
-  const [keyStateIsActive, setKeyIsActive] = useState({
-    all: false,
-    htmlcss: false,
-    js: false,
-  });
+  const [keyStateIsActive, setKeyIsActive] = useState('*');
   const isotope = useRef();
 
   useEffect(() => {
