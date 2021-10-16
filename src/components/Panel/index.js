@@ -20,7 +20,7 @@ function Panel() {
   return (
     <div className="panel__container" style={toggleMenuTransform}>
       <PhotoBox
-        name="John Doe"
+        name="Natalia Milovanova"
         title=""
         description=""
         avatar={photo}

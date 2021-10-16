@@ -19,8 +19,6 @@
     max-width: 163px;
     height: auto;
     max-height: 163px;
-    // width: 163px;
-    // height: 163px;
     border: 1px solid $main_white;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -35,6 +33,7 @@
   &__name {
     @extend .c-name_title;
     margin-bottom: 10px;
+    text-align: center;
 
     &--panel {
       font-size: 16px;

@@ -4,39 +4,55 @@ export const portfolioData = [
     text: 'Website for graphic design agency',
     url: 'https://hameleonka.github.io/Foinni/',
     image: '/images/portfolio-foinni.jpeg',
-    filter: 'html_css',
+    filter: 'html_css_js',
   },
   {
     title: 'Project JWood',
     text: 'Photography website',
     url: 'https://hameleonka.github.io/JWood/',
     image: '/images/portfolio-jwood.jpeg',
-    filter: 'html_css',
+    filter: 'html_css_js',
   },
   {
     title: 'Lookshop',
     text: 'Online shop for brand clothes',
     url: 'https://hameleonka.github.io/Lookshop/',
     image: '/images/portfolio-lookshop.jpeg',
-    filter: 'js',
+    filter: 'html_css_js',
   },
   {
     title: 'Velox',
     text: 'Web design agency',
     url: 'https://hameleonka.github.io/Velox/',
     image: '/images/portfolio-velox.jpeg',
-    filter: 'js',
+    filter: 'html_css_js',
   },
   {
     title: 'Glacy',
     text: 'Ice cream shop',
     url: 'https://hameleonka.github.io/133915-gllacy/index.html',
     image: '/images/portfolio-glacy.jpeg',
-    filter: 'js',
+    filter: 'html_css_js',
   },
+  {
+    title: 'Expense Tracker',
+    text: 'Expense Tracker app',
+    url: 'https://hameleonka.github.io/expense-tracker/',
+    image: '/images/portfolio-expense_tracker.png',
+    filter: 'reactjs',
+  },
+
 ];
 
 export const expertiseData = [
+  {
+    date: '',
+    info: {
+      company: '2018-current',
+      job: 'Stay-at-Home-Parent',
+      description: 'Finished rigorious 6 months web-development program, learned new programming skills on Udemy, while being a primary caregiver to a child',
+    },
+  },
   {
     date: '2017-2018',
     info: {

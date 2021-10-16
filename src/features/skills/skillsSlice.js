@@ -18,7 +18,6 @@ const skills = getSkillsFromLocalStorage();
 const skillsInitialState = {
   requestState: requestState.INITIAL,
   skillsData: skills || [],
-  addSkillFormState: false,
 };
 
 export const skillsSlice = createSlice({
@@ -40,12 +39,6 @@ export const skillsSlice = createSlice({
     setSkillsData: (state, action) => {
       state.skillsData = action.payload;
     },
-    addSkillData: (state, action) => {
-      state.skillsData.push(action.payload);
-    },
-    toggleAddSkillForm: (state) => {
-      state.addSkillFormState = !state.addSkillFormState;
-    },
   },
 });
 
@@ -55,8 +48,6 @@ export const {
   requestError,
   requestStored,
   setSkillsData,
-  addSkillData,
-  toggleAddSkillForm,
 } = skillsSlice.actions;
 
 export const skillsReducers = skillsSlice.reducer;
@@ -84,26 +75,4 @@ export const getSkillsData = () => async (dispatch, getState) => {
     }
   }
   dispatch(requestStored());
-};
-
-export const addSkill = (skill) => async (dispatch) => {
-  try {
-    dispatch(requestPending());
-    const response = await fetch('/api/skills', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(skill),
-    });
-    if (!response.ok) {
-      const message = `An error has occured: ${response.status}`;
-
-      throw new Error(message);
-    }
-    dispatch(requestSuccess());
-    dispatch(addSkillData(skill));
-  } catch (error) {
-    dispatch(requestError());
-  }
 };
