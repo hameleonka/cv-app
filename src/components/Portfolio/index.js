@@ -30,7 +30,7 @@ function Portfolio() {
     <>
       <ul className="portfolioList__keys">
         <li onClick={(event) => handleFilterKeyChange(event, '*')} className={keyStateIsActive === '*' ? 'active' : 'not-active'}>All /</li>
-        <li onClick={(event) => handleFilterKeyChange(event, 'html_css_js')} className={keyStateIsActive === 'html_css_js' ? 'active' : 'not-active'}>HTML&CSS&JS /</li>
+        <li onClick={(event) => handleFilterKeyChange(event, 'html_css_js')} className={keyStateIsActive === 'html_css_js' ? 'active' : 'not-active'}>HTML & CSS /</li>
         <li onClick={(event) => handleFilterKeyChange(event, 'reactjs')} className={keyStateIsActive === 'reactjs' ? 'active' : 'not-active'}>ReactJS</li>
       </ul>
       <div className="filter-container">
