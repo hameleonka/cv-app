@@ -1,18 +1,11 @@
-import { useEffect } from 'react';
 import {
-  Route, Redirect, Switch, useLocation,
+  Route, Redirect, Switch,
 } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
 import Inner from './pages/Inner/Inner';
 
 function App() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
   return (
     <div className="c-app">
       <Switch>
