@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "./static/css/main.bbd081bd.chunk.css",
-    "main.js": "./static/js/main.af173b48.chunk.js",
-    "main.js.map": "./static/js/main.af173b48.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.3e1715d7.js",
-    "runtime-main.js.map": "./static/js/runtime-main.3e1715d7.js.map",
-    "static/js/2.e548cda9.chunk.js": "./static/js/2.e548cda9.chunk.js",
-    "static/js/2.e548cda9.chunk.js.map": "./static/js/2.e548cda9.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.bbd081bd.chunk.css.map": "./static/css/main.bbd081bd.chunk.css.map",
-    "static/js/2.e548cda9.chunk.js.LICENSE.txt": "./static/js/2.e548cda9.chunk.js.LICENSE.txt",
-    "static/media/home.scss": "./static/media/home_background.d498ec78.png",
-    "static/media/menu_icon.13c12266.svg": "./static/media/menu_icon.13c12266.svg",
-    "static/media/natalia_milovanova_photo.650bd571.png": "./static/media/natalia_milovanova_photo.650bd571.png",
-    "static/media/up_btn.e70b567d.svg": "./static/media/up_btn.e70b567d.svg"
+    "main.css": "cv-app/static/css/main.1b3f77f2.chunk.css",
+    "main.js": "cv-app/static/js/main.11a1b246.chunk.js",
+    "main.js.map": "cv-app/static/js/main.11a1b246.chunk.js.map",
+    "runtime-main.js": "cv-app/static/js/runtime-main.c62eb4aa.js",
+    "runtime-main.js.map": "cv-app/static/js/runtime-main.c62eb4aa.js.map",
+    "static/js/2.e548cda9.chunk.js": "cv-app/static/js/2.e548cda9.chunk.js",
+    "static/js/2.e548cda9.chunk.js.map": "cv-app/static/js/2.e548cda9.chunk.js.map",
+    "index.html": "cv-app/index.html",
+    "static/css/main.1b3f77f2.chunk.css.map": "cv-app/static/css/main.1b3f77f2.chunk.css.map",
+    "static/js/2.e548cda9.chunk.js.LICENSE.txt": "cv-app/static/js/2.e548cda9.chunk.js.LICENSE.txt",
+    "static/media/home.scss": "cv-app/static/media/home_background.d498ec78.png",
+    "static/media/menu_icon.13c12266.svg": "cv-app/static/media/menu_icon.13c12266.svg",
+    "static/media/natalia_milovanova_photo.650bd571.png": "cv-app/static/media/natalia_milovanova_photo.650bd571.png",
+    "static/media/up_btn.e70b567d.svg": "cv-app/static/media/up_btn.e70b567d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3e1715d7.js",
+    "static/js/runtime-main.c62eb4aa.js",
     "static/js/2.e548cda9.chunk.js",
-    "static/css/main.bbd081bd.chunk.css",
-    "static/js/main.af173b48.chunk.js"
+    "static/css/main.1b3f77f2.chunk.css",
+    "static/js/main.11a1b246.chunk.js"
   ]
 }
