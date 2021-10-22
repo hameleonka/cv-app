@@ -6,10 +6,9 @@ import Timeline from '../../components/Timeline';
 import Expertise from '../../components/Expertise';
 import Portfolio from '../../components/Portfolio';
 import Address from '../../components/Address';
-import Feedback from '../../components/Feedback';
 import Panel from '../../components/Panel';
 import Skills from '../../components/Skills';
-import { expertiseData, feedbackData } from '../../utils/data';
+import { expertiseData } from '../../utils/data';
 
 import './inner.scss';
 import UpButton from '../../assets/images/up_btn.svg';
@@ -75,12 +74,6 @@ function Inner() {
           id="contacts"
           title="Contacts"
           component={<Address />}
-          showComponent
-        />
-        <Box
-          id="feedbacks"
-          title="Feedbacks"
-          component={<Feedback data={feedbackData} />}
           showComponent
         />
       </main>
