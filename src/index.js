@@ -11,7 +11,7 @@ import server from './services/server';
 server();
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename="cv-app">
     <Provider store={store}>
       <App />
     </Provider>
