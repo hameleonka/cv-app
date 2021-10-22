@@ -5,7 +5,7 @@ function FeedbackItem({ feedback, name, citeUrl }) {
     <div className="feedbackItem__container">
       <p className="feedbackItem__feedback">{feedback}</p>
       <div className="feedbackItem__reporter-container">
-        <img src="/images/feedback_img.png" alt="person who wrote a feedback" />
+        <img src="https://hameleonka.github.io/cv-app/images/feedback_img.png" alt="person who wrote a feedback" />
         <span className="feedbackItem__reporter-name">
           {name}
           ,
