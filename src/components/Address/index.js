@@ -14,7 +14,7 @@ function Address() {
       <a href="mailto:nmilovanova@gmail.com" className="address__contact">
         <FontAwesomeIcon icon={faEnvelope} className="address__icon fa-lg fa-fw" />
         {' '}
-        nmilovanova@gmail.com
+        natalie.milovanova@gmail.com
       </a>
       <a href="https://linkedin.com/in/natalia-milovanova-79b715122" className="address__contact">
         <FontAwesomeIcon icon={faLinkedinIn} className="address__icon fa-lg fa-fw" />

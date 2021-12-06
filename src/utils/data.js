@@ -41,16 +41,31 @@ export const portfolioData = [
     image: 'https://hameleonka.github.io/cv-app/images/portfolio-expense_tracker.png',
     filter: 'reactjs',
   },
+  {
+    title: 'React Meals',
+    text: 'Expense Tracker app',
+    url: 'https://hameleonka.github.io/food-order-app/',
+    image: 'https://hameleonka.github.io/cv-app/images/portfolio-react_meals.png',
+    filter: 'reactjs',
+  },
 
 ];
 
 export const expertiseData = [
   {
+    date: '2021',
+    info: {
+      company: 'EPAM',
+      job: 'Student',
+      description: 'UpSkill 6 months web-development program',
+    },
+  },
+  {
     date: '',
     info: {
-      company: '2018-current',
+      company: '2018-2021',
       job: 'Stay-at-Home-Parent',
-      description: 'Finished rigorious 6 months web-development program, learned new programming skills on Udemy, while being a primary caregiver to a child',
+      description: 'Learned new programming skills on Udemy, while being a primary caregiver to a child',
     },
   },
   {
@@ -87,22 +102,16 @@ export const expertiseData = [
   },
 ];
 
-export const feedbackData = [
-  {
-    feedback: ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.',
-    reporter: { photoUrl: './user.jpg', name: 'John Doe', citeUrl: 'https://www.citeexample.com' },
-  },
-  {
-    feedback: ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.',
-    reporter: { photoUrl: './user.jpg', name: 'John Doe', citeUrl: 'https://www.citeexample.com' },
-  },
-];
-
 export const timelineData = [
   {
     date: 2021,
     title: 'EPAM UpSkill',
     text: 'Online Front end development program',
+  },
+  {
+    date: 2020,
+    title: 'Udemy',
+    text: 'React complete course',
   },
   {
     date: 2018,

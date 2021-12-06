@@ -5,7 +5,7 @@ import { timelineData, skillsData } from '../utils/data';
 const server = () => createServer({
   routes() {
     this.namespace = 'api';
-    this.timing = 1000;
+    this.timing = 200;
 
     this.get('/educations', () => (timelineData));
 
