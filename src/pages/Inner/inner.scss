@@ -1,4 +1,4 @@
-@import '../../assets/styles/variables.scss';
+@import "../../assets/styles/variables.scss";
 
 .c-inner {
   display: flex;
@@ -6,7 +6,7 @@
   height: 100vh;
 
   main {
-    padding: 40px 30px 30px 30px;
+    padding: 40px 30px 30px 40px;
     overflow: auto;
     scroll-behavior: smooth;
   }
@@ -19,6 +19,14 @@
 
     &:hover {
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .c-inner {
+    main {
+      padding: 40px 10px 10px 10px;
     }
   }
 }

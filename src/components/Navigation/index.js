@@ -1,5 +1,5 @@
 import {
-  faUser, faGraduationCap, faPen, faGem, faSuitcase, faLocationArrow, faComment,
+  faUser, faGraduationCap, faPen, faGem, faSuitcase, faLocationArrow,
 } from '@fortawesome/free-solid-svg-icons';
 import NavigationItem from './NavigationItem';
 
@@ -13,13 +13,12 @@ function Navigation() {
     { icon: faGem, text: 'Skills', link: 'skills' },
     { icon: faSuitcase, text: 'Portfolio', link: 'portfolio' },
     { icon: faLocationArrow, text: 'Contacts', link: 'contacts' },
-    { icon: faComment, text: 'Feedbacks', link: 'feedbacks' },
   ];
 
   return (
     <nav className="navigation__container">
       <ul>
-        { navigationItems.map((navigationItem, index) => (
+        {navigationItems.map((navigationItem, index) => (
           <li key={index} className="navigation__item">
             <NavigationItem
               icon={navigationItem.icon}

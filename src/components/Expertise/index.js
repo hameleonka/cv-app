@@ -1,10 +1,11 @@
 /* eslint-disable react/no-array-index-key */
 import ExpertiseItem from './ExpertiseItem';
+import { expertiseData } from '../../utils/data';
 
-function Expertise({ data }) {
+function Expertise() {
   return (
     <div className="expertise__container">
-      {data.map((expertise, index) => (
+      {expertiseData.map((expertise, index) => (
         <ExpertiseItem
           key={index}
           date={expertise.date}

@@ -21,3 +21,14 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .box {
+    &__container {
+      margin-bottom: 20px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}

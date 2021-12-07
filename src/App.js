@@ -5,6 +5,8 @@ import {
 import Home from './pages/Home/Home';
 import Inner from './pages/Inner/Inner';
 
+import './assets/styles/normalize.css';
+
 function App() {
   return (
     <div className="c-app">

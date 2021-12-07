@@ -1,12 +1,13 @@
 import TimelineItem from './timelineItem';
+import { timelineData } from '../../utils/data';
 
 import './index.scss';
 
-function Timeline({ data }) {
+function Timeline() {
   return (
     <ul className="timeline__list">
 
-      {data.map((timelineItem, index) => (
+      {timelineData.map((timelineItem, index) => (
         <li key={index}>
           <TimelineItem
             title={timelineItem.title}

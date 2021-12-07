@@ -1,9 +1,9 @@
-
 @import "../../assets/styles/base.scss";
 
 .rangeAxis {
   position: relative;
   border-bottom: 1px solid $grey_text;
+  margin-bottom: 40px;
 
   &__mark {
     position: absolute;

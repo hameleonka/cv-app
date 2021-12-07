@@ -151,6 +151,6 @@ export const skillsData = [
   },
   {
     name: 'ReactJS',
-    range: 70,
+    range: 75,
   },
 ];

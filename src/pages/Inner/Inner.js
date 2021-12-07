@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-
 import Box from '../../components/Box';
 import Timeline from '../../components/Timeline';
 import Expertise from '../../components/Expertise';
@@ -8,26 +5,11 @@ import Portfolio from '../../components/Portfolio';
 import Address from '../../components/Address';
 import Panel from '../../components/Panel';
 import Skills from '../../components/Skills';
-import { expertiseData } from '../../utils/data';
 
 import './inner.scss';
 import UpButton from '../../assets/images/up_btn.svg';
-import { getTimelineData } from '../../features/education/educationSlice';
-import { getSkillsData } from '../../features/skills/skillsSlice';
-import { requestState } from '../../utils/const';
 
 function Inner() {
-  const timelineData = useSelector((state) => state.education.timelineData);
-  const timelineRequestState = useSelector((state) => state.education.requestState);
-  const skillsData = useSelector((state) => state.skills.skillsData);
-  const skillsRequestState = useSelector((state) => state.skills.requestState);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getTimelineData());
-    dispatch(getSkillsData());
-  }, []);
-
   return (
     <div className="c-inner">
       <aside>
@@ -37,32 +19,25 @@ function Inner() {
         <Box
           id="about_me"
           title="About me"
-          content="Hello, I'm Natalia. A freelance Front-End developer based in Boston. I specialize in creating interactive experiences and functional interfaces."
+          content="Hello, I'm Natalia. I'm a Front-End developer based in Boston. I specialize in creating interactive experiences and functional interfaces with ReactJS, JavaScript, HTML and CSS."
         />
         <Box
           id="education"
           title="Education"
-          component={<Timeline data={timelineData} />}
-          showLoader={timelineRequestState === requestState.PENDING}
-          showError={timelineRequestState === requestState.FAILED}
-          showComponent={timelineRequestState === requestState.FULFILLED}
+          component={<Timeline />}
+          showComponent
         />
         <Box
           id="experience"
           title="Experience"
-          component={<Expertise data={expertiseData} />}
+          component={<Expertise />}
           showComponent
         />
         <Box
           id="skills"
           title="Skills"
-          component={<Skills data={skillsData} />}
-          showLoader={skillsRequestState === requestState.PENDING}
-          showError={skillsRequestState === requestState.FAILED}
-          showComponent={
-            (skillsRequestState === requestState.FULFILLED)
-            || (skillsRequestState === requestState.STORED)
-          }
+          component={<Skills />}
+          showComponent
         />
         <Box
           id="portfolio"
