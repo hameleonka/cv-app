@@ -39,7 +39,8 @@ function Portfolio() {
             key={index}
             title={project.title}
             text={project.text}
-            url={project.url}
+            demoUrl={project.demoUrl}
+            codeUrl={project.codeUrl}
             image={project.image}
             filter={project.filter}
           />

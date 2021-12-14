@@ -15,7 +15,6 @@
       height: 100%;
     }
   }
- 
 
   &__image:hover {
     cursor: pointer;
@@ -49,9 +48,15 @@
 
   &__link {
     @extend .c-text;
+    display: block;
 
     line-height: 120%;
     color: $main_green;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
