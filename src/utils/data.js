@@ -62,6 +62,14 @@ export const portfolioData = [
     image: 'https://hameleonka.github.io/cv-app/images/portfolio-movie_app.png',
     filter: 'reactjs',
   },
+  {
+    title: 'Form App',
+    text: 'Simple form app',
+    demoUrl: 'https://hameleonka.github.io/simple-form-app/',
+    codeUrl: 'https://github.com/hameleonka/simple-form-app',
+    image: 'https://hameleonka.github.io/cv-app/images/portfolio-form_app.png',
+    filter: 'reactjs',
+  },
 
 ];
 
