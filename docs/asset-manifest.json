@@ -1,24 +1,32 @@
 {
   "files": {
-    "main.css": "/cv-app/static/css/main.5bb47399.chunk.css",
-    "main.js": "/cv-app/static/js/main.1114022a.chunk.js",
-    "main.js.map": "/cv-app/static/js/main.1114022a.chunk.js.map",
+    "main.css": "/cv-app/static/css/main.ea4c3b8e.chunk.css",
+    "main.js": "/cv-app/static/js/main.44b94199.chunk.js",
+    "main.js.map": "/cv-app/static/js/main.44b94199.chunk.js.map",
     "runtime-main.js": "/cv-app/static/js/runtime-main.e584abf7.js",
     "runtime-main.js.map": "/cv-app/static/js/runtime-main.e584abf7.js.map",
     "static/js/2.609ec8cd.chunk.js": "/cv-app/static/js/2.609ec8cd.chunk.js",
     "static/js/2.609ec8cd.chunk.js.map": "/cv-app/static/js/2.609ec8cd.chunk.js.map",
     "index.html": "/cv-app/index.html",
-    "static/css/main.5bb47399.chunk.css.map": "/cv-app/static/css/main.5bb47399.chunk.css.map",
+    "static/css/main.ea4c3b8e.chunk.css.map": "/cv-app/static/css/main.ea4c3b8e.chunk.css.map",
     "static/js/2.609ec8cd.chunk.js.LICENSE.txt": "/cv-app/static/js/2.609ec8cd.chunk.js.LICENSE.txt",
+    "static/media/css_icon.2ca36cc6.svg": "/cv-app/static/media/css_icon.2ca36cc6.svg",
+    "static/media/git_icon.5f993478.svg": "/cv-app/static/media/git_icon.5f993478.svg",
     "static/media/home.scss": "/cv-app/static/media/home_background.d498ec78.png",
+    "static/media/html_icon.da66747e.svg": "/cv-app/static/media/html_icon.da66747e.svg",
+    "static/media/jest_icon.37d6cec8.svg": "/cv-app/static/media/jest_icon.37d6cec8.svg",
+    "static/media/js_icon.1192a303.svg": "/cv-app/static/media/js_icon.1192a303.svg",
     "static/media/menu_icon.13c12266.svg": "/cv-app/static/media/menu_icon.13c12266.svg",
     "static/media/natalia_milovanova_photo.650bd571.png": "/cv-app/static/media/natalia_milovanova_photo.650bd571.png",
-    "static/media/up_btn.e70b567d.svg": "/cv-app/static/media/up_btn.e70b567d.svg"
+    "static/media/react_icon.76e22750.svg": "/cv-app/static/media/react_icon.76e22750.svg",
+    "static/media/redux_icon.609190d1.svg": "/cv-app/static/media/redux_icon.609190d1.svg",
+    "static/media/up_btn.e70b567d.svg": "/cv-app/static/media/up_btn.e70b567d.svg",
+    "static/media/webpack_icon.fcd21a76.svg": "/cv-app/static/media/webpack_icon.fcd21a76.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e584abf7.js",
     "static/js/2.609ec8cd.chunk.js",
-    "static/css/main.5bb47399.chunk.css",
-    "static/js/main.1114022a.chunk.js"
+    "static/css/main.ea4c3b8e.chunk.css",
+    "static/js/main.44b94199.chunk.js"
   ]
 }
