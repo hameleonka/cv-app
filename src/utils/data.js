@@ -1,3 +1,13 @@
+import htmlIcon from '../assets/images/html_icon.svg';
+import cssIcon from '../assets/images/css_icon.svg';
+import jsIcon from '../assets/images/js_icon.svg';
+import reactIcon from '../assets/images/react_icon.svg';
+import reduxIcon from '../assets/images/redux_icon.svg';
+import jestIcon from '../assets/images/jest_icon.svg';
+import gitIcon from '../assets/images/git_icon.svg';
+import webpackIcon from '../assets/images/webpack_icon.svg';
+
+/* eslint-disable max-len */
 export const portfolioData = [
   {
     title: 'Foinni',
@@ -79,7 +89,10 @@ export const expertiseData = [
     info: {
       company: 'EPAM',
       job: 'Student',
-      description: 'UpSkill 6 months web-development program',
+      description: ['- Created web pages with HTML5 /CSS3 /JavaScript;',
+        '- Solved multiple advanced JavaScript practice tasks;',
+        '- Developed and deployed  web applications  with ReactJS, Redux, Redux Toolkit;',
+        '- Wrote test suites with Jest and React Testing Library'],
     },
   },
   {
@@ -87,7 +100,7 @@ export const expertiseData = [
     info: {
       company: '2018-2021',
       job: 'Stay-at-Home-Parent',
-      description: 'Learned new programming skills on Udemy, while being a primary caregiver to a child',
+      description: ['- Learned new programming skills on Udemy, while being a primary caregiver to a child'],
     },
   },
   {
@@ -95,7 +108,7 @@ export const expertiseData = [
     info: {
       company: 'Mozilla',
       job: 'OUTREACHY program intern',
-      description: 'Refactored Firefox Add-ons linter test suite from promise based code to async/await based code',
+      description: ['- Refactored Firefox Add-ons linter test suite from promise based code to async/await based code'],
     },
   },
   {
@@ -103,7 +116,7 @@ export const expertiseData = [
     info: {
       company: 'Code For Social Good',
       job: 'Volunteer front-end web developer',
-      description: 'Collaborated on the development of an Angular 2 web application of a global volunteering platform that provides nonprofit organizations with free technical resources',
+      description: ['- Collaborated on the development of an Angular 2 web application of a global volunteering platform that provides nonprofit organizations with free technical resources'],
     },
   },
   {
@@ -111,17 +124,22 @@ export const expertiseData = [
     info: {
       company: 'GasProject Engineering ',
       job: 'Lead engineer',
-      description: 'Designed and provided all technical documentation for building  JSC "GAZPROM" security systems (e.g., perimeter and building security, fire alarm and firefighting, closed-circuit television (CCTV) and access control systems)',
+      description: ['- Designed and provided all technical documentation for building  security systems (e.g., perimeter and building security, fire alarm and firefighting, closed-circuit television (CCTV) and access control systems) for facilities of oil/gas complex;',
+        '- Managed a multi-level team of engineers, including prioritizing tasks and measuring performance;',
+        '- Presented documentation to clients and interacted with multiple contractors'],
     },
   },
-  {
-    date: '2009-2014',
-    info: {
-      company: 'RusGas Engineering',
-      job: 'Lead engineer',
-      description: 'Presented documentation to clients and interacted with multiple contractors. Developed technical decisions and verified technical documentation. Managed a multi-level team of engineers, including prioritizing tasks and measuring performance. Designed and provided all technical documentation for building  security systems (e.g., perimeter and building security, fire alarm and firefighting, closed-circuit television (CCTV) and access control systems) for facilities of oil/gas complex.',
-    },
-  },
+  // {
+  //   date: '2009-2014',
+  //   info: {
+  //     company: 'RusGas Engineering',
+  //     job: 'Lead engineer',
+  //     description: `- Presented documentation to clients and interacted with multiple contractors
+  //                   - Developed technical decisions and verified technical documentation
+  //                   - Managed a multi-level team of engineers, including prioritizing tasks and measuring performance.
+  //                   - Designed and provided all technical documentation for building  security systems (e.g., perimeter and building security, fire alarm and firefighting, closed-circuit television (CCTV) and access control systems) for facilities of oil/gas complex.`,
+  //   },
+  // },
 ];
 
 export const timelineData = [
@@ -160,19 +178,35 @@ export const timelineData = [
 
 export const skillsData = [
   {
-    name: 'HTML',
-    range: 100,
+    name: 'HTML5',
+    iconUrl: htmlIcon,
   },
   {
-    name: 'CSS',
-    range: 90,
+    name: 'CSS3',
+    iconUrl: cssIcon,
   },
   {
     name: 'JavaScript',
-    range: 80,
+    iconUrl: jsIcon,
   },
   {
     name: 'ReactJS',
-    range: 75,
+    iconUrl: reactIcon,
+  },
+  {
+    name: 'Redux',
+    iconUrl: reduxIcon,
+  },
+  {
+    name: 'Jest',
+    iconUrl: jestIcon,
+  },
+  {
+    name: 'Git',
+    iconUrl: gitIcon,
+  },
+  {
+    name: 'Webpack',
+    iconUrl: webpackIcon,
   },
 ];

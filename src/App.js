@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import Inner from './pages/Inner/Inner';
 
 import './assets/styles/normalize.css';
+import './App.css';
 
 function App() {
   return (

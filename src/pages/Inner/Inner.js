@@ -28,15 +28,15 @@ function Inner() {
           showComponent
         />
         <Box
-          id="experience"
-          title="Experience"
-          component={<Expertise />}
-          showComponent
-        />
-        <Box
           id="skills"
           title="Skills"
           component={<Skills />}
+          showComponent
+        />
+        <Box
+          id="experience"
+          title="Experience"
+          component={<Expertise />}
           showComponent
         />
         <Box

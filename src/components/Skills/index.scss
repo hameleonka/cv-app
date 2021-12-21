@@ -1,23 +1,80 @@
 @import "../../assets/styles/base.scss";
+@import "../../assets/styles/variables.scss";
 
 .skills {
   &__wrapper {
-    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  &__chart {
-    margin-bottom: 20px;
+  &__icon__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $grey_bgnd;
+    padding: 0.5em;
+    border-radius: 10%;
+    box-shadow: 4px 4px 4px 0px #6e6e6e;
+    margin-right: 2em;
+    margin-bottom: 1em;
 
-    &-item {
-      background-color: $main_green;
-      padding: 5px 15px;
-      margin-bottom: 5px;
-      box-sizing: border-box;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    width: 5em;
+    height: 5em;
+    margin-bottom: 0.5em;
+  }
+
+  &__text {
+    @extend .c-box_title;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .skills {
+    &__wrapper {
+      width: 70%;
+      justify-content: flex-start;
     }
 
-    &-name {
-      @extend .c-chart_text;
-      color: $main_white;
+    &__icon__wrapper {
+      margin-right: 4em;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .skills {
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__icon__wrapper {
+      margin-right: 6em;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .skills {
+    &__icon__wrapper {
+      margin-right: 4em;
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  &__wrapper {
+    justify-content: space-between;
+  }
+  .skills {
+    &__icon__wrapper {
+      margin-right: 3em;
     }
   }
 }
