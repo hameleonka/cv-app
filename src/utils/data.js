@@ -89,18 +89,18 @@ export const expertiseData = [
     info: {
       company: 'EPAM',
       job: 'Student',
-      description: ['- Created web pages with HTML5 /CSS3 /JavaScript;',
-        '- Solved multiple advanced JavaScript practice tasks;',
-        '- Developed and deployed  web applications  with ReactJS, Redux, Redux Toolkit;',
-        '- Wrote test suites with Jest and React Testing Library'],
+      description: ['Created web pages with HTML5 /CSS3 /JavaScript',
+        'Solved multiple advanced JavaScript practice tasks',
+        'Developed and deployed  web applications  with ReactJS, Redux, Redux Toolkit',
+        'Wrote test suites with Jest and React Testing Library'],
     },
   },
   {
-    date: '',
+    date: '2018-2021',
     info: {
-      company: '2018-2021',
+      company: '',
       job: 'Stay-at-Home-Parent',
-      description: ['- Learned new programming skills on Udemy, while being a primary caregiver to a child'],
+      description: ['Learned new programming skills on Udemy, while being a primary caregiver to a child'],
     },
   },
   {
@@ -108,7 +108,7 @@ export const expertiseData = [
     info: {
       company: 'Mozilla',
       job: 'OUTREACHY program intern',
-      description: ['- Refactored Firefox Add-ons linter test suite from promise based code to async/await based code'],
+      description: ['Refactored Firefox Add-ons linter test suite from promise based code to async/await based code'],
     },
   },
   {
@@ -116,30 +116,27 @@ export const expertiseData = [
     info: {
       company: 'Code For Social Good',
       job: 'Volunteer front-end web developer',
-      description: ['- Collaborated on the development of an Angular 2 web application of a global volunteering platform that provides nonprofit organizations with free technical resources'],
+      description: ['Collaborated on the development of an Angular 2 web application of a global volunteering platform that provides nonprofit organizations with free technical resources'],
     },
   },
   {
     date: '2014-2015',
     info: {
-      company: 'GasProject Engineering ',
+      company: 'GasProject Engineering (Russia)',
       job: 'Lead engineer',
-      description: ['- Designed and provided all technical documentation for building  security systems (e.g., perimeter and building security, fire alarm and firefighting, closed-circuit television (CCTV) and access control systems) for facilities of oil/gas complex;',
-        '- Managed a multi-level team of engineers, including prioritizing tasks and measuring performance;',
-        '- Presented documentation to clients and interacted with multiple contractors'],
+      description: ['Designed and provided all technical documentation for building  JSC "GAZPROM" security systems (e.g., perimeter and building security, fire alarm and firefighting, closed-circuit television (CCTV) and access control systems'],
     },
   },
-  // {
-  //   date: '2009-2014',
-  //   info: {
-  //     company: 'RusGas Engineering',
-  //     job: 'Lead engineer',
-  //     description: `- Presented documentation to clients and interacted with multiple contractors
-  //                   - Developed technical decisions and verified technical documentation
-  //                   - Managed a multi-level team of engineers, including prioritizing tasks and measuring performance.
-  //                   - Designed and provided all technical documentation for building  security systems (e.g., perimeter and building security, fire alarm and firefighting, closed-circuit television (CCTV) and access control systems) for facilities of oil/gas complex.`,
-  //   },
-  // },
+  {
+    date: '2009-2014',
+    info: {
+      company: 'RusGas Engineering (Russia)',
+      job: 'Lead engineer',
+      description: ['Designed and provided all technical documentation for building  security systems(e.g., perimeter and building security, fire alarm and firefighting, closed- circuit television(CCTV) and access control systems) for facilities of oil/ gas complex',
+        'Managed a multi-level team of engineers, including prioritizing tasks and measuring performance',
+        'Presented documentation to clients and interacted with multiple contractors'],
+    },
+  },
 ];
 
 export const timelineData = [
@@ -170,7 +167,7 @@ export const timelineData = [
   },
   {
     date: 2007,
-    title: 'Ufa State Aviation Technical University',
+    title: 'Ufa State Aviation Technical University (Russia)',
     text: 'Master\'s Degree in Engineering, Information and measuring equipment and technology',
   },
 

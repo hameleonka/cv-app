@@ -78,3 +78,19 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .skills {
+    &__icon__wrapper {
+      margin-right: 2em;
+    }
+    &__icon {
+      width: 4em;
+      height: 4em;
+    }
+  }
+  .c-box_title,
+  .skills__text {
+    font-size: 12px;
+  }
+}
